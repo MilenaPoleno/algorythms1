@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+public class CountingSort {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 3, 2, 3, 4, 2, 1, 1, 2, 
+            3, 4, 4, 2, 3, 1, 4, 2, 3, 4, 2, 1, 2, 3, 4, 
+            2, 1, 3, 4, 2, 1, 2, 3, 4, 4, 2, 3, 3, 2, 4};
+        int k = 50;
+        countingSort(array);
+    }
+    
+    static void countingSort(int[] array) {
+        int[] count = new int[array.length];
+        for (int number : array) {
+            count[number]++;            
+        }
+        int z = 0;
+        for (int i = 0; i < count.length; i++) {
+            if (count[i] != 0) {
+                System.out.println(i + " -> " + count[i]);
+            }
+        }
+    }
+}
