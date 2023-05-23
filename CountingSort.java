@@ -5,8 +5,7 @@ public class CountingSort {
         int[] array = {1, 2, 3, 3, 2, 3, 4, 2, 1, 1, 2, 
             3, 4, 4, 2, 3, 1, 4, 2, 3, 4, 2, 1, 2, 3, 4, 
             2, 1, 3, 4, 2, 1, 2, 3, 4, 4, 2, 3, 3, 2, 4};
-        int k = 50;
-        countingSort(array);
+     countingSort(array);
     }
     
     static void countingSort(int[] array) {
