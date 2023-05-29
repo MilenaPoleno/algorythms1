@@ -34,7 +34,7 @@ public class MyLinkedList<T> {
 
     public T popLast() {
         if (head == null)
-            throw new IllegalStateException("Список пустой");
+            throw new IllegalStateException("Empty");
         return pop(size - 1);
     }
 
@@ -69,7 +69,7 @@ public class MyLinkedList<T> {
 
     public T get(int index) {
         if (head == null) {
-            throw new IllegalStateException("Список пустой");
+            throw new IllegalStateException("Empty");
         } else if (index < 0) {
             throw new IndexOutOfBoundsException(index);
         }
